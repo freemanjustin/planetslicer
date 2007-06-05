@@ -12,6 +12,10 @@ int main( int argc, char** argv )
         exit(1);
     }
 	
+	if ( argc < 2 ){
+         fprintf(stderr, "%s: need an xml file as an argument\n", argv[0] );
+         exit(1);
+    }
 	
 	// handle the command line args here:
     for (j=1 ; j<argc ; j++){
