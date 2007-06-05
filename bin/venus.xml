@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Venus example
+
+ sphere & core arguments
+ 	1 means draw the whole sphere with no cutaways
+ 	78 means draw 7/8 ths of the sphere
+ 	12 means draw 1/2 a sphere
+ 	14 means draw 1/4 of a sphere
+ 	34 means draw 3/4 of a sphere
+-->
+
+<SlicerData>
+
+	<!-- slicer parameters -->
+	<params>
+		<geometry name="sphere">12</geometry>
+		<geometry name="core">12</geometry>
+	</params>
+	
+	<!-- planet internal structure parameters -->
+	<layer name="core">
+		<start_radius> 0.0 </start_radius>
+		<end_radius> 0.48</end_radius>
+		<texture>./textures/metal13.png</texture>
+		<color> 1.0 1.0 1.0 </color>
+	</layer>
+	<layer name="layer2">
+		<start_radius> 0.48 </start_radius>
+		<end_radius> 0.95 </end_radius>
+		<texture> ./textures/rock4.png </texture>
+		<color> 0.75 0.75 0.75 </color>
+	</layer>
+	<layer name="layer3">
+		<start_radius> 0.95 </start_radius>
+		<end_radius> 1.0 </end_radius>
+		<texture> ./textures/rock4.png </texture>
+		<color> 0.70 0.55 0.05 </color>
+	</layer>
+	<layer name="surface">
+		<start_radius> 0.0 </start_radius>
+		<end_radius> 1.0 </end_radius>
+		<texture>./textures/venus.png</texture>
+		<color> 1.0 1.0 1.0 </color>
+	</layer>
+	
+</SlicerData>

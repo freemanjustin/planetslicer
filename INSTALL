@@ -1,0 +1,16 @@
+TO MAKE slicer
+
+under OS X:
+
+make -f Makefile.OSX
+
+under linux:
+
+make -f Makefile.linux
+
+TO RUN slicer
+
+./slicer <inputfile_name. xml>
+
+there are several examples in the bin directory
+

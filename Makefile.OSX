@@ -1,0 +1,38 @@
+###################################################################
+#
+#  slicer 
+#
+# freeman.justin@gmail.com
+#
+##################################################################
+
+
+OBJ=	./src/main.o \
+		./src/openglSetup.o \
+		./src/openglMisc.o \
+		./src/draw.o \
+		./src/loadTexture.o \
+		./src/getparams.o
+
+# Compliler flags
+INC=   -D_OS_X_ -I./include 
+		
+
+CFLAGS=	-O3 -Wall `xml2-config --cflags`
+
+CC=	gcc $(CFLAGS) $(INC) 
+
+# Libraries
+
+LFLAGS=	-framework OpenGL -framework GLUT -L/sw/lib -lpng `xml2-config --libs`
+
+# Executable
+
+EXEC=	./bin/slicer	
+
+$(EXEC):$(OBJ)
+	$(CC) -o $(EXEC) $(OBJ) $(LFLAGS)
+
+clean:
+	rm $(OBJ)
+	rm $(EXEC)

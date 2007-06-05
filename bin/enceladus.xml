@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Enceladus example
+
+ sphere & core arguments
+ 	1 means draw the whole sphere with no cutaways
+ 	78 means draw 7/8 ths of the sphere
+ 	12 means draw 1/2 a sphere
+ 	14 means draw 1/4 of a sphere
+ 	34 means draw 3/4 of a sphere
+-->
+
+<SlicerData>
+
+	<!-- slicer parameters -->
+	<params>
+		<geometry name="sphere">78</geometry>
+		<geometry name="core">1</geometry>
+		<backgroundColor> 0.0 0.0 0.0 </backgroundColor>
+		<!-- window size (width height) -->
+		<window> 400 400 </window>
+		<!-- optional camera & zoom -->
+		<camera> 125.0 0.0 225.0 </camera>
+		<zoom> 3.0 </zoom>
+	</params>
+	
+	<!-- planet internal structure parameters -->
+	<layer name="core">
+		<start_radius> 0.0 </start_radius>
+		<end_radius> 0.6 </end_radius>
+		<texture>./textures/bmetal10.png</texture>
+		<color> 1.0 1.0 1.0 </color>
+	</layer>
+	<layer name="layer2">
+		<start_radius> 0.6 </start_radius>
+		<end_radius> 0.65 </end_radius>
+		<texture> NULL </texture>
+		<color> 0.85 0.45 0.15 </color>
+	</layer>
+	<layer name="layer3">
+		<start_radius> 0.65 </start_radius>
+		<end_radius> 0.7 </end_radius>
+		<texture> NULL </texture>
+		<color> 0.39 0.58 0.93 </color>
+	</layer>
+	<layer name="layer4">
+		<start_radius> 0.7 </start_radius>
+		<end_radius> 1.0 </end_radius>
+		<texture> ./textures/water3.png </texture>
+		<color> 0.75 0.75 0.75 </color>
+	</layer>
+	<layer name="surface">
+		<start_radius> 0.0 </start_radius>
+		<end_radius> 1.0 </end_radius>
+		<texture> ./textures/enceladus.png </texture>
+		<color> 1.0 1.0 1.0 </color>
+	</layer>
+	
+</SlicerData>

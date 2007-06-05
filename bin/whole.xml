@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Whole Sphere example
+
+ sphere & core arguments
+ 	1 means draw the whole sphere with no cutaways
+ 	78 means draw 7/8 ths of the sphere
+ 	12 means draw 1/2 a sphere
+ 	14 means draw 1/4 of a sphere
+ 	34 means draw 3/4 of a sphere
+-->
+
+<SlicerData>
+
+	<!-- slicer parameters -->
+	<params>
+		<geometry name="sphere">1</geometry>
+	</params>
+	
+	<!-- planet internal structure parameters -->
+	<layer name="surface">
+		<start_radius> 0.0 </start_radius>
+		<end_radius> 1.0 </end_radius>
+		<texture>./textures/earth_j.png</texture>
+		<color> 1.0 1.0 1.0 </color>
+	</layer>
+	
+</SlicerData>

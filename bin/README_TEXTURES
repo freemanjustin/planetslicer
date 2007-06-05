@@ -1,0 +1,10 @@
+The included textures are low res versions of texture maps.
+High res planetary texture maps are available from:
+
+http://maps.jpl.nasa.gov/ 
+http://www.johnstonsarchive.net/spaceart/planetcylmaps.html
+http://www.mmedia.is/~bjj/
+http://planetpixelemporium.com/planets.html 
+ 
+NOTE: slicer can only read texture maps that are in png format
+
