@@ -258,7 +258,7 @@ void keys( unsigned char key, int x, int y )
 			}
 		}
 	}
-	if( key == 'i' || key == 'I'){
+	if( key == 'i' || key == 'I' || key == 'h' || key == 'H' ){
 	   fprintf(stdout,"keyboard navigation:\n");
 	   fprintf(stdout,"s or S : save an image\n");
 	   fprintf(stdout,"w or W : save xml\n");
