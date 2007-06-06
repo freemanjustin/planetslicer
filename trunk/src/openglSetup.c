@@ -309,7 +309,7 @@ void motion(int x, int y)
 {
 	switch(E->action){
 		case 1:
-			E->theta[1] = E->theta[1] + (x - E->startx);
+			E->theta[1] = E->theta[1] - (x - E->startx);
     		E->theta[0] = E->theta[0] + (y - E->starty);
     		break;
     	case 2:
