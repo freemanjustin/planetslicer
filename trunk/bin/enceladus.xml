@@ -52,7 +52,7 @@
 	<layer name="surface">
 		<start_radius> 0.0 </start_radius>
 		<end_radius> 1.0 </end_radius>
-		<texture> ./textures/enceladus.png </texture>
+		<texture> ./textures/enceladus-2k.png </texture>
 		<color> 1.0 1.0 1.0 </color>
 	</layer>
 	

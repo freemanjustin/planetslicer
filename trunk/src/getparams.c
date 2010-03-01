@@ -361,8 +361,8 @@ void loadTextureMaps(e	*E)
 									PNG_SOLID, 
 									&infoLayer, 
 									GL_CLAMP, 
-									GL_NEAREST, 
-									GL_NEAREST);
+									GL_LINEAR_MIPMAP_LINEAR, 
+									GL_LINEAR_MIPMAP_LINEAR);
 			if (E->texture[i] == 0) {
 				fprintf(stderr,"Can't load file: %s\n",E->L[i].textureMap);
 				exit(1);
